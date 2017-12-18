@@ -1,4 +1,4 @@
-package com.nab.limitsservice;
+package com.nab.limitsservice.bean;
 
 public class LimitConfig {
 
