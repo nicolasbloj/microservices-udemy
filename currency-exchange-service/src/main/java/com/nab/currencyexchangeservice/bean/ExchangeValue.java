@@ -8,6 +8,7 @@ public class ExchangeValue {
 	private String from;
 	private String to;
 	private BigDecimal covertionMultiple;
+	private int port;
 	
 	protected ExchangeValue() {
 		
@@ -35,6 +36,14 @@ public class ExchangeValue {
 
 	public BigDecimal getCovertionMultiple() {
 		return covertionMultiple;
+	}
+
+	public int getPort() {
+		return port;
+	}
+
+	public void setPort(int port) {
+		this.port = port;
 	}
 	
 	
