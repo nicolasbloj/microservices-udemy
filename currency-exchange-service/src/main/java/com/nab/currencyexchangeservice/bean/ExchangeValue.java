@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 
 
-@Entity //(name="exchange_value")
+@Entity
 public class ExchangeValue {
 	
 	@Id
@@ -20,8 +20,8 @@ public class ExchangeValue {
 	@Column(name="currency_to")
 	private String to;
 	
-	@Column(name="convertion_multiple")
-	private BigDecimal covertionMultiple;
+	@Column(name="conversion_multiple")
+	private BigDecimal coversionMultiple;
 
 	@Column(name="port")
 	private int port;
@@ -30,12 +30,12 @@ public class ExchangeValue {
 		
 	}
 	
-	public ExchangeValue(Long id, String from, String to, BigDecimal covertionMultiple) {
+	public ExchangeValue(Long id, String from, String to, BigDecimal coversionMultiple) {
 		super();
 		this.id = id;
 		this.from = from;
 		this.to = to;
-		this.covertionMultiple = covertionMultiple;
+		this.coversionMultiple = coversionMultiple;
 	}
 
 	public Long getId() {
@@ -50,8 +50,8 @@ public class ExchangeValue {
 		return to;
 	}
 
-	public BigDecimal getCovertionMultiple() {
-		return covertionMultiple;
+	public BigDecimal getCoverSionMultiple() {
+		return coversionMultiple;
 	}
 
 	public int getPort() {
