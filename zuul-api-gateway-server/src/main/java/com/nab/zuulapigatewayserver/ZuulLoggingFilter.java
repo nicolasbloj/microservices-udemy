@@ -27,6 +27,10 @@ public class ZuulLoggingFilter extends ZuulFilter {
 	// http://localhost:8765/{SERVICE-NAME}/{URI}
 	// http://localhost:8765/currency-exchange-service/currency-exchange/from/EUR/to/INR/
 
+	// http://localhost:8765/currency-conversion-service/currency-converter/feign/from/EUR/to/INR/quantity/150
+	// en currency-conversion-service a travez de feign nos conectamos a zuul-api-gateway-server
+	// ver com.nab.currencyconversionservice.proxy.CurrencyExchangeServiceProxy
+	
 	@Override
 	public boolean shouldFilter() {
 		return true;
